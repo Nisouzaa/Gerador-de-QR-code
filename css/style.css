@@ -28,6 +28,9 @@ body {
   padding: 20px;
   transition: 0.2s;
 }
+.container.active {
+  height: 500px;
+}
 
 /* Header */
 #qr-header {
@@ -45,7 +48,7 @@ body {
 }
 
 /* formulario */
-#qr-form {
+.container #qr-form {
   margin: 20px 15px;
 }
 
@@ -79,4 +82,25 @@ body {
   background: linear-gradient(135deg, #90ee, rgb(19, 1, 37));
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Qr code */
+
+#qr-code {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  border: 1px solid #95df;
+  padding: 30px 0;
+  margin: 20px 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.container.active #qr-code  {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.5;
 }
