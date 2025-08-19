@@ -99,8 +99,52 @@ body {
   transition: 0.5s;
 }
 
-.container.active #qr-code  {
+.container.active #qr-code {
   opacity: 1;
   pointer-events: auto;
   transition: 0.5;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 780px) {
+  #qr-header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 780px) {
+  #qr-header p {
+    font-size: 0.8rem;
+  }
+}
+
+#qr-form input,
+#qr-form button {
+  height: 45px;
+  font-size: 0.95rem;
+}
+
+.container {
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  #qr-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+#qr-header p {
+  font-size: 0.8rem;
+}
+
+#qr-form input,
+#qr-form button {
+  height: 40px;
+  font-size: 0.85rem;
+}
+
+.container{
+  padding: 18px;
+  border-radius: 8px;
 }
